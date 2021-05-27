@@ -30,19 +30,14 @@ def solution(n, s, a, b, fares):
 
     def dijacstra(n, graph, start, end):
         distances = [float('inf') for _ in range(n + 1)]
-        visited = [False] * (n + 1)
-
         que = []
         distances[start] = 0
         heapq.heappush(que, [0, start])
 
         while que:
             cur_cost, cur_location = heapq.heappop(que)
-            if visited[cur_location]:
-                continue
             if distances[cur_location] < cur_cost:
                 continue
-            visited[cur_location] = True
             for adjacent in graph[cur_location]:
                 if distances[cur_location] + graph[cur_location][adjacent] < distances[adjacent]:
                     distances[adjacent] = distances[cur_location] + graph[cur_location][adjacent]
