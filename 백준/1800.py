@@ -16,6 +16,10 @@ def dfs(cur_node, visited, total):
     global min_
 
     if cur_node == N:
+        if len(total) <= K:
+            print(0)
+            exit(0)
+
         total.sort(reverse=True)
         if total[K] < min_:
             min_ = total[K]
