@@ -22,6 +22,7 @@
   * 2019 KAKAO BLIND RECRUITMENT
   * 2020 KAKAO BLIND RECRUITMENT
   * 2021 KAKAO BLIND RECRUITMENT
+  * 2021 카카오 채용연계형 
   * 동적계획법
   * 연습문제
   * 월간 코드 챌린지 시즌1
