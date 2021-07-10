@@ -1,3 +1,7 @@
+'''
+2021 카카오 채용연계형 인턴십 코딩 테스트 4번 문제
+'''
+
 import heapq
 from collections import defaultdict
 
